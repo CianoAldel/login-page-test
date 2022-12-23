@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     const getUser = () => {
-      fetch("https://27a7-2403-6200-8958-5146-cdc5-f967-e077-fd13.ap.ngrok.io/authorization/login/success", {
+      fetch("http://localhost:5001/authorization/login/success", {
         method: "GET",
         credentials: "include",
         headers: {
@@ -37,7 +37,7 @@ const App = () => {
 
   useEffect(() => {
     const getDataSpecies = () => {
-      fetch("https://27a7-2403-6200-8958-5146-cdc5-f967-e077-fd13.ap.ngrok.io/species", {
+      fetch("http://localhost:5001/species", {
         method: "GET",
         // credentials: "include",
         headers: {
